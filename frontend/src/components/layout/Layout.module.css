@@ -1,0 +1,21 @@
+.layout {
+  min-height: 100vh;
+  background: #080a0f;
+}
+
+.container {
+  display: flex;
+  padding-top: 64px; /* navbar height */
+}
+
+.main {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+}

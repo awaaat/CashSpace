@@ -1,0 +1,244 @@
+/* src/pages/Payment/PaymentDetailsPage.module.css – Soft light theme, complete */
+.detailPage {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+body {
+  margin: 0;
+  background: #f8fafc;
+}
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.backButton {
+  background: none;
+  border: none;
+  color: #6b7280;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+.backButton:hover {
+  background: #f3f4f6;
+  color: #111827;
+}
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.checkoutLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f0c040;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.checkoutLink:hover {
+  opacity: 0.85;
+}
+
+/* Polling banner */
+.pollingBar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #fef9c3;
+  border: 1px solid #fde68a;
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  color: #854d0e;
+  margin-bottom: 1.5rem;
+}
+
+/* Cards */
+.detailCard {
+  background: #fefefe;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+.detailCardHeader {
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.detailCardTitle {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Meta grid (Reference, Created, etc.) */
+.detailMetaGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: #f1f5f9;
+}
+.detailMetaCell {
+  background: #fefefe;
+  padding: 0.75rem 1.5rem;
+}
+.detailMetaCellLabel {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #9ca3af;
+  margin-bottom: 0.25rem;
+}
+.detailMetaCellValue {
+  font-size: 0.875rem;
+  color: #111827;
+  font-weight: 500;
+  word-break: break-all;
+  font-family: monospace;
+}
+.detailMetaCellValuePlain {
+  font-size: 0.875rem;
+  color: #111827;
+  font-weight: 500;
+}
+
+/* Row layout for financials / destination / payout */
+.detailRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.7rem 1.5rem;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 0.875rem;
+  gap: 1.5rem;
+}
+.detailRow:last-child {
+  border-bottom: none;
+}
+.detailRowLabel {
+  color: #6b7280;
+  flex-shrink: 0;
+  min-width: 180px;
+}
+.detailRowValue {
+  color: #111827;
+  text-align: right;
+  word-break: break-all;
+}
+.detailDivider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 0 1.5rem;
+}
+
+/* Utilities */
+.mono {
+  font-family: monospace;
+  font-size: 0.8rem;
+}
+.gold {
+  color: #f0c040;
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
+}
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 30px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.spinnerSmall {
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 2px solid #e5e7eb;
+  border-top-color: #f0c040;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  flex-shrink: 0;
+}
+.spinner {
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid #e5e7eb;
+  border-top-color: #f0c040;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  margin: 0 auto;
+}
+.loading {
+  text-align: center;
+  padding: 2rem;
+}
+.errorMessage {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  padding: 0.75rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .detailPage {
+    padding: 1rem;
+  }
+  .detailMetaGrid {
+    grid-template-columns: 1fr;
+  }
+  .detailRowLabel {
+    min-width: 100px;
+  }
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .headerLeft {
+    justify-content: space-between;
+  }
+}

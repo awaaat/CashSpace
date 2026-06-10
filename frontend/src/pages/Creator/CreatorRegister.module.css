@@ -1,0 +1,161 @@
+/* frontend/src/pages/Creator/CreatorRegister.module.css */
+/* Dark theme, matching main dashboard */
+
+:root {
+  --cs-bg: #080a0f;
+  --cs-card: #111318;
+  --cs-border: rgba(255, 255, 255, 0.07);
+  --cs-gold: #f0c040;
+  --cs-text: #f1f3f8;
+  --cs-muted: #8b8fa8;
+  --cs-red: #ef4444;
+  --font: 'Inter', system-ui, -apple-system, sans-serif;
+  --r: 14px;
+  --rs: 8px;
+}
+
+.container {
+  min-height: 100vh;
+  background: var(--cs-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: var(--font);
+}
+
+.card {
+  max-width: 560px;
+  width: 100%;
+  background: var(--cs-card);
+  border: 1px solid var(--cs-border);
+  border-radius: var(--r);
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5rem;
+  color: var(--cs-text);
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: var(--cs-muted);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.field label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--cs-muted);
+}
+
+.field input,
+.field select,
+.field textarea {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--cs-border);
+  border-radius: var(--rs);
+  padding: 0.6rem 0.75rem;
+  color: var(--cs-text);
+  font-size: 0.875rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--cs-gold);
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.fieldGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.hint {
+  font-size: 0.7rem;
+  color: var(--cs-muted);
+  margin-top: 0.2rem;
+}
+
+.error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: var(--rs);
+  padding: 0.6rem;
+  font-size: 0.8rem;
+  color: #fca5a5;
+  text-align: center;
+}
+
+.button {
+  background: var(--cs-gold);
+  color: #000;
+  border: none;
+  border-radius: var(--rs);
+  padding: 0.75rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  margin-top: 0.5rem;
+}
+
+.button:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.info {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--cs-border);
+  font-size: 0.75rem;
+  color: var(--cs-muted);
+}
+
+.info p {
+  margin: 0 0 0.5rem;
+  font-weight: 500;
+}
+
+.info ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.info li {
+  margin: 0.25rem 0;
+  line-height: 1.4;
+}

@@ -1,0 +1,35 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #080a0f;
+  text-align: center;
+}
+
+.content {
+  max-width: 480px;
+  padding: 2rem;
+}
+
+.code {
+  font-size: 8rem;
+  font-weight: 800;
+  font-family: "Syne", sans-serif;
+  background: linear-gradient(135deg, #f0c040, #e8a020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 0;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.description {
+  color: #6b7280;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,180 @@
+.page {
+  min-height: 100vh;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.logoMark {
+  width: 32px;
+  height: 32px;
+  background: #f0c040;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 16px;
+  color: #000;
+}
+
+.logoText {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+.iconWrap {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.iconSuccess { background: #d1fae5; }
+.iconFailed  { background: #fee2e2; }
+.iconPending { background: #f1f5f9; }
+
+.icon {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.iconSuccess .icon { color: #10b981; }
+.iconFailed  .icon { color: #ef4444; }
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #e2e8f0;
+  border-top-color: #f0c040;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.title        { font-size: 1.3rem; font-weight: 800; color: #0f172a; margin: 0 0 8px; }
+.titleSuccess { font-size: 1.3rem; font-weight: 800; color: #10b981; margin: 0 0 8px; }
+.titleFailed  { font-size: 1.3rem; font-weight: 800; color: #ef4444; margin: 0 0 8px; }
+
+.sub {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin: 0 0 28px;
+  line-height: 1.5;
+}
+
+.statusRows {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 4px 0;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.statusRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.statusRow:last-child { border-bottom: none; }
+
+.statusLabel {
+  font-size: 0.8rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.statusVal {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.green { color: #10b981; }
+.red   { color: #ef4444; }
+.muted { color: #94a3b8; }
+
+.testBadge {
+  background: #fef3c7;
+  color: #d97706;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.7rem;
+}
+
+.error {
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  color: #ef4444;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 0.75rem;
+  margin-bottom: 16px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.retryBtn {
+  background: #0f172a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+}
+
+.redirectBtn {
+  display: block;
+  background: #f0c040;
+  color: #000;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  width: 100%;
+}
+
+.footer {
+  font-size: 0.72rem;
+  color: #94a3b8;
+}

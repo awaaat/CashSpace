@@ -1,0 +1,79 @@
+/* WelcomeBanner.module.css – Larger fonts, high contrast */
+.wrapper {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2rem;               /* was 1.5rem – bigger */
+  font-weight: 700;
+  color: #0f172a;                /* very dark, almost black */
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;               /* was 0.875rem – larger */
+  color: #1e293b;                /* darker than before */
+  margin-top: 0.25rem;
+  line-height: 1.5;
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  background: #fef9c3;
+  border: 1px solid #facc15;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;         /* more padding */
+  margin-top: 1rem;
+  font-size: 0.9rem;             /* larger */
+  color: #854d0e;
+}
+
+.alertBtn {
+  background: none;
+  border: 1px solid #eab308;
+  border-radius: 6px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #854d0e;
+  transition: background 0.2s;
+}
+
+.alertBtn:hover {
+  background: #fef3c7;
+}
+
+.eduTip {
+  margin-top: 1.5rem;
+  background: #f8fafc;
+  border-left: 4px solid #f0c040; /* thicker border */
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  font-size: 0.9rem;             /* was 0.75rem – larger */
+  color: #1e293b;                /* darker text */
+  line-height: 1.6;
+}
+
+.eduTip strong {
+  color: #f0c040;
+}
+
+.eduTip ul {
+  margin: 0.75rem 0 0 1.5rem;
+  padding-left: 0;
+}
+
+.eduTip li {
+  margin: 0.4rem 0;
+  color: #1e293b;
+}
+
+.highlight {
+  color: #f0c040;
+  font-weight: 600;
+  font-size: 1rem;              /* make the "New to CashSpace?" bigger */
+}

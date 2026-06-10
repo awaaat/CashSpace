@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 13px;
+  color: #fca5a5;
+}
+
+.forgotLink {
+  background: none;
+  border: none;
+  color: #f0c040;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: right;
+  padding: 0;
+}
+
+.forgotLink:hover {
+  text-decoration: underline;
+}

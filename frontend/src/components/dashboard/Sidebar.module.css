@@ -1,0 +1,165 @@
+/* Sidebar.module.css – No close button, bigger & bolder nav items */
+.sidebar {
+  width: 260px;
+  background: #f9fafb;
+  border-radius: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 84px;
+  left: 20px;
+  bottom: 20px;
+  z-index: 50;
+  transform: translateX(-120%);
+  transition: transform 0.25s ease;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  padding: 20px 16px;
+  border-bottom: 1px solid #eef2f6;
+  /* removed justify-content: space-between because there's no close button */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.logoMark {
+  width: 28px;
+  height: 28px;
+  background: #f0c040;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 13px;
+  color: #000;
+}
+
+.logoText {
+  font-weight: 700;
+  font-size: 15px;
+  color: #111827;
+}
+
+.nav {
+  flex: 1;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;                    /* slightly more gap for bigger items */
+}
+
+.navItem {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 10px 12px;          /* more padding for bigger click area */
+  border-radius: 10px;
+  font-size: 15px;             /* bigger than before (13px → 15px) */
+  font-weight: 600;            /* bolder (was 500) */
+  color: #1f2937;              /* dark gray, high contrast */
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.navItem:hover {
+  background: #eef2f6;
+  color: #000;                 /* pure black on hover for maximum contrast */
+}
+
+.footer {
+  padding: 16px 12px;
+  border-top: 1px solid #eef2f6;
+}
+
+.userChip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  background: #f0c040;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  color: #000;
+}
+
+.userName {
+  font-size: 13px;             /* slightly larger */
+  font-weight: 600;
+  color: #111827;
+}
+
+.userRole {
+  font-size: 11px;
+  color: #6b7280;
+  text-transform: capitalize;
+}
+
+.logoutBtn {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 7px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.logoutBtn:hover {
+  color: #ef4444;
+  border-color: #ef4444;
+}
+
+.menuBtn {
+  display: none;
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 60;
+  background: #f9fafb;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 45;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    transform: translateX(0);
+  }
+  .menuBtn {
+    display: none;
+  }
+}

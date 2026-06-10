@@ -1,0 +1,245 @@
+/* pages/Auth/AuthPage.module.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  background: #080a0f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 1.5rem;
+}
+
+.card {
+  max-width: 440px;
+  width: 100%;
+  background: #111318;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+
+.logoMark {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #f0c040, #e8a020);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 18px;
+  color: #000;
+}
+
+.logoText {
+  font-weight: 700;
+  font-size: 20px;
+  color: #f9fafb;
+  letter-spacing: -0.3px;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #9ca3af;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.stat {
+  text-align: center;
+  flex: 1;
+}
+
+.stat strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #f0c040;
+  margin-bottom: 4px;
+}
+
+.stat span {
+  font-size: 11px;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #9ca3af;
+}
+
+.field input {
+  width: 100%;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  color: #f9fafb;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #f0c040;
+}
+
+.passwordWrapper {
+  position: relative;
+}
+
+.passwordWrapper input {
+  padding-right: 60px;
+}
+
+.showBtn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #9ca3af;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.showBtn:hover {
+  color: #f9fafb;
+}
+
+.forgotLink {
+  text-align: right;
+  margin-top: -4px;
+}
+
+.forgotLink a {
+  font-size: 12px;
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.forgotLink a:hover {
+  color: #f0c040;
+  text-decoration: underline;
+}
+
+.submitBtn {
+  background: linear-gradient(135deg, #f0c040, #e8a020);
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  margin-top: 8px;
+}
+
+.submitBtn:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.submitBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.switchLink {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.switchLink a {
+  color: #f0c040;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.switchLink a:hover {
+  text-decoration: underline;
+}
+
+.errorMessage {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 13px;
+  color: #fca5a5;
+  text-align: center;
+}
+.buttonGroup {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 8px;
+}
+
+.backBtn {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 12px;
+  color: #9ca3af;
+  font-weight: 500;
+  cursor: pointer;
+  flex: 1;
+}
+
+.backBtn:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #f9fafb;
+}
+
+.submitBtn {
+  flex: 2;
+}
